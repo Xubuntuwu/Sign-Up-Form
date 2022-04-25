@@ -39,6 +39,13 @@ body {
     align-items: stretch;
     margin: 0;
 }
+#fullbody {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    margin: 0;
+}
 aside {
     background-image: url(./pictures/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
@@ -189,6 +196,7 @@ button:hover {
 }
 
 @media screen and (max-width: 500px) {
+    /*only works on chrome */
     body {
         display: flex;
         flex-direction: column;

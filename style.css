@@ -213,6 +213,7 @@ button:hover {
     aside {
         min-height: 40vh;
         flex: 0;
+        position: relative;
     }
 
     #odintitle {

@@ -25,32 +25,34 @@
 
                 <div class="inputdiv">
                 <label for="firstname">FIRST NAME</label>
-                <input type="text" id="firstname">
+                <input type="text" id="firstname" placeholder="Thor" required>
                 </div>
 
                 <div class="inputdiv">
                 <label for="lastname">LAST NAME</label>
-                <input type="text" id="lastname">
+                <input type="text" id="lastname" required placeholder=" ">
                 </div>
 
                 <div class="inputdiv">
                 <label for="email">EMAIL</label>
-                <input type="email" id="email">
+                <input type="email" id="email" required placeholder=" ">
                 </div>
 
                 <div class="inputdiv">
                 <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="phone">
+                <input type="tel" id="phone" required placeholder=" ">
                 </div>
 
                 <div class="inputdiv">
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password">
+                <input class="" type="password" id="password" > <!--passwords arent required right now-->
+                <div class="firstpassworddiv"></div>
                 </div>
 
                 <div class="inputdiv">
                 <label for="confirmpassword">CONFIRM PASSWORD</label>
-                <input type="password" id="confirmpassword">
+                <input type="password" id="confirmpassword" >
+                <div class="secondpassworddiv"></div>
                 </div>
 
             </fieldset>
@@ -64,4 +66,5 @@
         </div>
     </section>   
 </body>
+<script src="javascript.js"></script>
 </html>

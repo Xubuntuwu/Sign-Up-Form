@@ -1,18 +1,15 @@
-/*let firstpassword = document.getElementById("password");
-let secondpassword = document.getElementById("confirmpassword");
-const firstpassdiv = document.getElementsByClassName("firstpassworddiv");
-const secondpassdiv = document.getElementsByClassName("secondpassworddiv");
-
+const firstpassword = document.getElementById("password");
+const secondpassword = document.getElementById("confirmpassword");
+const firstpassdiv = document.getElementById("firstpassworddiv");
 firstpassword.addEventListener('keyup', passwordEqual)
 secondpassword.addEventListener('keyup', passwordEqual)
 
 
 function passwordEqual() {
-    firstpassword = firstpassword.value;
-    secondpassword = secondpassword.value;
-    if (firstpassword!=secondpassword) {
+    firstpasswordvalue = firstpassword.value;
+    secondpasswordvalue = secondpassword.value;
+    if (firstpasswordvalue!=secondpasswordvalue) {
         if (firstpassword.classList.contains("error")) {
-            console.log("Hello");
         }
         else {
             firstpassdiv.classList.add("error");
@@ -21,11 +18,10 @@ function passwordEqual() {
         }
     }
     else {
-        if (firstpassword.classList.contains("error")) {
+        if (firstpassword.classList.contains("error")){
             firstpassdiv.classList.remove("error");
             secondpassword.classList.remove("error");
             firstpassword.classList.remove("error");
         }
     }
 }
-*/

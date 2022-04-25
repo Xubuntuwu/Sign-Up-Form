@@ -117,7 +117,7 @@ legend {
 }
 form {
     padding-left: 5%;
-    width: 80%;
+    width: 100%;
     color: #212b39;
 }
 form input {
@@ -172,7 +172,7 @@ button {
     background-color: var(--button-color);
     color: var(--input-border-color);
     width: 25%;
-    height: 3rem;
+    min-height: fit-content;
     margin: 2rem 0;
     box-shadow: 0.5rem 0.5rem 1rem 0.1rem RGBA(0,0,0,0.2);
 }

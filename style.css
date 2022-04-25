@@ -1,0 +1,173 @@
+@font-face {
+    font-family: OdinFont;
+    src: url(./fonts/Norse-Bold.otf);
+}
+@font-face{
+    font-family: ArabotoMedium;
+    src: url(./fonts/Araboto-Medium.ttf);
+}
+@font-face{
+    font-family: ArabotoNormal;
+    src: url(./fonts/Araboto\ Normal\ 400.ttf);
+}
+@font-face {
+    font-family: ArabotoBold;
+    src: url(./fonts/Araboto\ Bold\ 400.ttf);
+}
+@font-face {
+    font-family: Corporate;
+    src: url(./fonts/Corporate\ S\ BQ\ Medium.ttf);
+}
+@font-face {
+    font-family: ArabotoBlack;
+    src: url(./fonts/Araboto-Black.ttf);
+}
+:root {
+    --button-color: #596D48;
+    --input-border-color: #E5E7EB;
+    --odin-div-height: min(20vh,150px);
+
+}
+html, body {
+    height: 100%; /*otherwise body only has size of content */
+}
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    margin: 0;
+}
+aside {
+    background-image: url(./pictures/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    flex: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+aside a {
+    color: inherit;
+    text-decoration: underline var(--input-border-color);
+    text-underline-offset: 1px;
+}
+#odintitle {
+    position: relative;
+    top: 20vh;
+    height: var(--odin-div-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: OdinFont;
+    font-size: 5rem;
+    background-color: RGBA(0,0,0,0.55);
+    color: var(--input-border-color);
+}
+#logo {
+    height: calc( var(--odin-div-height) - 1rem); /*dont forget white space in calc */
+}
+#creditbackground {
+    position: absolute;
+    bottom: 2vh;
+    color: white;
+    width: 100%;
+    text-align: center;
+    opacity: 0.5;
+    background-color: RGBA(0,0,0,0);
+}
+section {
+    overflow: auto;
+    background-color: #f9fafb;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#divintrotext {
+    padding-left: 5%;
+    width: 80%;
+    font-size: 1.8rem;
+    font-family: ArabotoMedium;
+    padding-bottom: 5%;
+}
+legend {
+    font-family: ArabotoMedium;
+    font-size: 2rem;
+}
+#postformdiv {
+    padding-left: 5%;
+    width: 80%;
+}
+#postformdiv p {
+    font-family: ArabotoNormal;
+    font-size: large;
+}
+
+#formdiv {
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 10px -9px RGBA(0,0,0,0.5);
+}
+form {
+    padding-left: 5%;
+    width: 80%;
+    color: #212b39;
+}
+form input {
+    border-radius: 7px;
+    height: 1.5rem;
+    border: var(--input-border-color) solid 2px;
+    outline: none; /*outline is standardly added in browsers*/
+}
+form input:focus {
+    border: rgb(81, 81, 255) solid 2px;
+    box-shadow: 0.5rem 0.5rem 1.5rem 0.5rem RGBA(0,0,0,0.3);
+}
+form input:invalid {
+    border: red solid 2px;
+}
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-left: 0;
+    gap: 15%;
+    border: none;
+
+}
+div.inputdiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    font-family: Corporate;
+    width: 33%;
+}
+
+.inputdiv label {
+    font-size: small;
+}
+.inputdiv input {
+    font-size: large;
+    height: 1.7rem;
+}
+
+button {
+    font-family: ArabotoBold;
+    font-size: large;
+    border-radius: 8px;
+    border-style: none;
+    background-color: var(--button-color);
+    color: var(--input-border-color);
+    width: 25%;
+    height: 3rem;
+    margin-top: 2rem;
+    box-shadow: 0.5rem 0.5rem 1rem 0.1rem RGBA(0,0,0,0.2);
+}
+button:active {
+    border: ridge;
+}
+#loginlink {
+    color: var(--button-color);
+    text-decoration: none;
+    font-family: ArabotoBlack;
+}

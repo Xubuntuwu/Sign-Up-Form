@@ -185,8 +185,8 @@ button:active {
     border: ridge;
 }
 button:hover {
+    cursor: url(./pictures/mini-flower-35.png), pointer;
     pointer-events: auto;
-    cursor: pointer;
 }
 #loginlink {
     color: var(--button-color);
@@ -275,3 +275,7 @@ button:hover {
         padding: fit-content 0;
     }
 }
+
+
+/*CSS is a mess right now, I really need to do 
+something about the organizing of this code */

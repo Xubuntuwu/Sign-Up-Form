@@ -188,7 +188,7 @@ button:hover {
     color: red;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
     body {
         display: flex;
         flex-direction: column;

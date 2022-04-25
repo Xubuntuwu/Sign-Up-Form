@@ -130,11 +130,15 @@ form input:focus {
     border: rgb(81, 81, 255) solid 2px;
     box-shadow: 0.5rem 0.5rem 1.5rem 0.5rem RGBA(0,0,0,0.3);
 }
+
 form input:invalid, form input.error{
     border: red solid 2px;
 }
 form input:invalid:placeholder-shown{
     border: var(--input-border-color) solid 2px;
+}
+#confirmpassword.error {
+    border: red solid 2px;
 }
 fieldset {
     display: flex;
@@ -188,7 +192,7 @@ button:hover {
     text-decoration: none;
     font-family: ArabotoBlack;
 }
-[type="password"]+.error::after {
+#password+.error::after {
     content: "*Passwords do not match";
     font-family: Corporate;
     font-size: small;

@@ -177,6 +177,7 @@ button {
     color: var(--input-border-color);
     width: 25%;
     min-height: fit-content;
+    padding: 1.5rem 0;
     margin: 2rem 0;
     box-shadow: 0.5rem 0.5rem 1rem 0.1rem RGBA(0,0,0,0.2);
 }
@@ -199,7 +200,7 @@ button:hover {
     color: red;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
     /*only works on chrome */
     body {
         display: flex;
@@ -271,5 +272,6 @@ button:hover {
     }
     button {
         height: min-content;
+        padding: fit-content 0;
     }
 }
